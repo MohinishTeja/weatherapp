@@ -1,0 +1,94 @@
+*{
+  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Nunito",sans-serif;
+  background: #f8f8f8;
+}
+
+.whole {
+  float: left;
+  width: 24%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.wholewhole {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.wholewhole:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.whole {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .whole {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+input[type="submit"]{
+  padding: 15px 30px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.input input[type="text"]{
+  width: 200px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.card{
+  width: 80%;
+  background: #e7e7e7;
+  height: 40vh;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+
+.close{
+  
+  margin-top: -2px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.card h1{
+  padding: 5px 0;
+  text-align: center;
+}
+
+.card p{
+  text-align: center;
+  margin:40px 0;
+  font-size:20px;
+}
